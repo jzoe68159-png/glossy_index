@@ -54,7 +54,7 @@ I built a custom ingredient‑scoring system (the “Glossy Index”) to quantif
 - `beauty_dashboard.py` – main Streamlit app
 - `product_info.csv` – dataset (Sephora product info)
 - `requirements.txt` – Python packages
-- `scatter.png`, `brands.png`, `gems.png` – screenshots
+- `graph1&2_.png`, `graph3&4_.png`, `brand_battle.png` , `best_value_gems.png` – screenshots
 - `README.md` – you're reading it!
 
 ## 👩‍💻 Author
