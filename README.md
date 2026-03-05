@@ -31,15 +31,10 @@ I built a custom ingredient‑scoring system (the “Glossy Index”) to quantif
 - **GitHub** – version control and deployment
 
 ##  Screenshots
-
-*Price vs. Ingredient Quality – no clear relationship*
-![Price vs Ingredient](scatter.png)
-
-*Top 10 Most Expensive Brands – luxury names dominate*
-![Top Brands](brands.png)
-
-*Best Value Gems – high‑quality, affordable products*
-![Gems Table](gems.png)
+![Best Value Gems](best_value_gems.png)
+![Brand Battle](brand_battle.png)
+![Graph 1 & 2](graph1&2_.png)
+![Graph 3 & 4](graph3&4_.png)
 
 ##  Key Insights
 - **Price does not equal quality** – expensive products don’t consistently have better ingredients; many budget brands score just as high.
