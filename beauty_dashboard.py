@@ -6,9 +6,9 @@ import seaborn as sns
 import plotly.express as px
 import re
 
-# ------------------------------
-# Page configuration – pretty pink theme
-# ------------------------------
+
+# Page configuration –  pink theme
+
 st.set_page_config(
     page_title="✨ The Glossy Index – Beauty Product Analyzer",
     page_icon="💄",
@@ -16,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS to make it extra pretty
+# Custom CSS to make it visually pleasing
 st.markdown("""
 <style>
     .stApp {
@@ -64,9 +64,9 @@ st.markdown("""
 st.title("💖 **The Glossy Index** – Beauty Product Analyzer")
 st.markdown("Uncover the **real value** behind beauty products. Do expensive products really have better ingredients? Let's find out!")
 
-# ------------------------------
+
 # Load and cache data
-# ------------------------------
+
 @st.cache_data
 def load_data():
     df = pd.read_csv('product_info.csv')
@@ -78,9 +78,9 @@ def load_data():
 
 df = load_data()
 
-# ------------------------------
+
 # Ingredient scoring (same as before)
-# ------------------------------
+
 ingredient_scores = {
     # High-quality
     'Sodium Hyaluronate': 3, 'Hyaluronic Acid': 3, 'Tocopherol': 3,
@@ -124,9 +124,8 @@ def compute_scores(df):
 
 df = compute_scores(df)
 
-# ------------------------------
-# Sidebar filters – pretty and functional
-# ------------------------------
+
+# Sidebar filters 
 st.sidebar.header("🎀 **Filter your products**")
 
 # Brand multi-select
@@ -159,9 +158,8 @@ df_filtered = df[mask].copy()
 
 st.sidebar.markdown(f"**✨ {len(df_filtered)} products match your vibe.**")
 
-# ------------------------------
 # Main content – two columns
-# ------------------------------
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -235,9 +233,9 @@ with col4:
     )
     st.plotly_chart(fig4, use_container_width=True)
 
-# ------------------------------
+
 # Best Value Gems table
-# ------------------------------
+
 
 st.markdown("""
 <style>
@@ -270,9 +268,8 @@ if not gems.empty:
 else:
     st.info("No gems match your filters – try expanding your criteria!")
 
-# ------------------------------
-# Surprise Me Button – Fun & Interactive
-# ------------------------------
+
+# Surprise Me Button 
 st.markdown("---")
 col_surprise1, col_surprise2 = st.columns([1, 3])
 with col_surprise1:
@@ -293,9 +290,9 @@ with col_surprise1:
         else:
             st.warning("No gems found with current filters – expand your criteria!")
 
-# ------------------------------
+
 # Brand comparison tool
-# ------------------------------
+
 st.header("⚖️ **Brand Battle**")
 col5, col6 = st.columns(2)
 with col5:
